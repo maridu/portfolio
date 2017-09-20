@@ -30,64 +30,80 @@
 
       <main class="main">
         <section class="features">
-          <h2 class="section-title visually-hidden">Преимущества</h2>
-          <ul class="features__list">
-            <li class="features__item">
-              <h3 class="features__title">Адаптивность</h3>
-              <p class="features__description">Ваш сайт будет смотреться хорошо как на больших экранах, так и на мобильных устройствах</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__title">Кроссбраузерность</h3>
-              <p class="features__description">Корректное отображение сайта в различных браузерах</p>
-            </li>
-            <li class="features__item">
-              <h3 class="features__title">Семантичность</h3>
-              <p class="features__description">Семантическая вёрстка увеличивает доступность информации для посетителей сайта, улучшает поисковую индексацию, облегчает дальнейшую поддержку</p>
-            </li>
-          </ul>
+          <div class="inner-wrapper">
+            <h2 class="section-title visually-hidden">Преимущества</h2>
+            <ul class="features__list">
+              <li class="features__item">
+                <h3 class="features__title">Адаптивность</h3>
+                <p class="features__description">Ваш сайт будет смотреться хорошо как на больших экранах, так и на мобильных устройствах</p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__title">Кроссбраузерность</h3>
+                <p class="features__description">Корректное отображение сайта в различных браузерах</p>
+              </li>
+              <li class="features__item">
+                <h3 class="features__title">Семантичность</h3>
+                <p class="features__description">Семантическая вёрстка увеличивает доступность информации для посетителей сайта, улучшает поисковую индексацию, облегчает дальнейшую поддержку</p>
+              </li>
+            </ul>
+          </div>
         </section> <!--  end features section-->
 
         <section class="skills">
-          <h2 class="skills__title section-title">Ключевые навыки:</h2>
-          <ul class="skills__list">
-            <li class="skills__item">Адаптивная кроссбраузерная верстка с использованием HTML5 и CSS3</li>
-            <li class="skills__item">Базовые знания JavaScript и JQuery</li>
-            <li class="skills__item">Работа с Photoshop (нарезка макетов)</li>
-            <li class="skills__item">Использование методологии БЭМ в именовании классов</li>
-            <li class="skills__item">Работа с Git через командную строку</li>
-            <li class="skills__item">Использование SASS</li>
-          </ul>
+          <div class="inner-wrapper-skills">
+            <h2 class="skills__title section-title">Ключевые навыки:</h2>
+            <ul class="skills__list">
+              <li class="skills__item">Адаптивная кроссбраузерная верстка с использованием HTML5 и CSS3</li>
+              <li class="skills__item">Базовые знания JavaScript и JQuery</li>
+              <li class="skills__item">Работа с Photoshop (нарезка макетов)</li>
+              <li class="skills__item">Использование методологии БЭМ в именовании классов</li>
+              <li class="skills__item">Работа с Git через командную строку</li>
+              <li class="skills__item">Использование SASS</li>
+            </ul>
+          </div>
         </section> <!--end skills section-->
 
 
         <section class="portfolio">
-          <h2 class="portfolio__title section-title" id="portfolio">Портфолио</h2>
-          <ul class="portfolio__list">
-            <li class="portfolio__item">
-              <a href="https://maridu.github.io/226594-sedona/" class="portfolio__link">
-                <img src="images/content/portfolio-sedona.jpg" alt="Седона" class="portfolio__preview" width="500" height="1079">
-              </a>
-              <p class="portfolio__description">Выпускной проект интенсивного курса "Базовый HTML и CSS" HTML Academy - резиновая вёрстка без адаптива (768-1200px), с использованием JavaScript (учебный макет).</p>
-            </li>
-            <li class="portfolio__item">
-              <a href="https://maridu.github.io/j-wood/" class="portfolio__link">
-                <img src="images/content/portfolio-jwood.jpg" alt="Jason Wood" class="portfolio__preview" width="500" height="1125">
-              </a>
-              <p class="portfolio__description">Адаптивная вёрстка сайта-портфолио для фотографа, с использованием JavaScript (тренировочный макет).</p>
-            </li>
-          </ul>
+          <div class="inner-wrapper">
+            <h2 class="portfolio__title section-title" id="portfolio">Портфолио</h2>
+            <ul class="portfolio__list">
+              <li class="portfolio__item">
+                <div class="portfolio__site">
+                  <img src="images/content/portfolio-sedona.jpg" alt="Седона" class="portfolio__preview" width="500" height="1079">
+                  <a href="https://maridu.github.io/226594-sedona/" class="portfolio__link">maridu.github.io/226594-sedona</a>
+                </div>
+                <p class="portfolio__description">Выпускной проект интенсивного курса "Базовый HTML и CSS" HTML Academy - резиновая вёрстка без адаптива (768-1200px), с использованием JavaScript (учебный макет).</p>
+                <a class="btn portfolio__btn" href="https://maridu.github.io/226594-sedona/" target="_blank">Посмотреть сайт</a>
+              </li>
+              <li class="portfolio__item">
+                <div class="portfolio__site">
+                  <img src="images/content/portfolio-jwood.jpg" alt="Jason Wood" class="portfolio__preview" width="500" height="1125">
+                  <a href="https://maridu.github.io/j-wood/" class="portfolio__link">maridu.github.io/j-wood</a>
+                </div>
+                <p class="portfolio__description">Адаптивная вёрстка сайта-портфолио для фотографа, с использованием JavaScript (тренировочный макет).</p>
+                <a class="btn portfolio__btn" href="https://maridu.github.io/j-wood/" target="_blank">Посмотреть сайт</a>
+              </li>
+            </ul>
+          </div>
         </section> <!--    end portfolio section-->
 
         <section class="feedback">
-          <h2 class="section-title feedback__title" id="feedback">Напишите мне:</h2>
-          <form class="feedback_form" action="https://formspree.io/maria_dulatova@mail.ru">
-            <label for="name">Ваше имя:</label>
-            <input class="feedback__input" type="text" name="name" id="name" placeholder="Иван Иванов">
-            <label for="email">Ваш e-mail:</label>
-            <input class="feedback__input" type="text" name="email" id="email" placeholder="ivanov@mail.ru">
-            <textarea class="feedback__textarea" name="message" id="message" cols="30" rows="10"></textarea>
-            <input class="feedback__button button button-submit" type="submit" name="submit" value="Отправить">
-          </form>
+          <div class="inner-wrapper">
+            <h2 class="section-title feedback__title" id="feedback">Напишите мне:</h2>
+            <form class="feedback__form" action="https://formspree.io/maria_dulatova@mail.ru" method="post">
+              <div class="feedback__input-wrapper">
+                <label for="name" class="feedback__label">Ваше имя:</label>
+                <input class="feedback__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+              </div>
+              <div class="feedback__input-wrapper">
+                <label for="email" class="feedback__label">Ваш e-mail:</label>
+                <input class="feedback__input" type="text" name="email" id="email" placeholder="ivanov@mail.ru">
+              </div>
+              <textarea class="feedback__textarea" name="message" id="message" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+              <input class="feedback__btn btn btn-submit" type="submit" name="submit" value="Отправить">
+            </form>
+          </div>
         </section><!--    end feedback section-->
       </main>
 
@@ -96,13 +112,13 @@
           <h2 class="contacts__title section-title visually-hidden" id="contacts">Контакты:</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a href="maria-dulatova@mail.ru" class="contacts__link mail">Почта</a>
+              <a href="mailto:maria-dulatova@mail.ru" class="contacts__link mail" target="_blank"><span class="visually-hidden">Почта</span></a>
                </li>
             <li class="contacts__item">
-              <a href="https://vk.com/id185644921" class="contacts__link vk">ВКонтакте</a>
+              <a href="https://vk.com/id185644921" class="contacts__link vk" target="_blank"><span class="visually-hidden">ВКонтакте</span></a>
             </li>
             <li class="contacts__item">
-               <a href="https://github.com/maridu" class="contacts__link github">Гитхаб</a>
+               <a href="https://github.com/maridu" class="contacts__link github" target="_blank"><span class="visually-hidden">Гитхаб</span></a>
             </li>
           </ul>
           <p class="mail"></p>

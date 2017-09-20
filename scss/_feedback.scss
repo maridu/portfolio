@@ -1,0 +1,74 @@
+.feedback {
+  padding-top: 1px;
+  background-color: #bc9577;
+//  background-color: #BB81A2;
+}
+
+.feedback__title {
+  @extend .skills__title;
+  color: #fff;
+//  text-shadow: 1px 1px 1px #000;
+}
+
+.feedback__form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  padding: 0 7% 80px 7%;
+}
+
+.feedback__input-wrapper {
+  width: 48%;
+  margin-bottom: 20px;
+}
+
+.feedback__label {
+  display: block;
+  margin-bottom: 5px;
+  
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.feedback__input {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 0;
+}
+
+.feedback__input:focus {
+  background-color: #eddee7;
+  outline: none;
+}
+
+.feedback__textarea {
+  @extend .feedback__input;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.feedback__btn {
+  margin: 0 auto;
+  padding: 10px 25px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #660066;
+}
+
+.feedback__btn:hover {
+  cursor: pointer;
+  background-color: #993399;
+}
+
+.feedback__btn:focus {
+  @extend .feedback__btn:hover;
+  outline: none;
+}
+
+.feedback__btn:active {
+  background-color: #743e5d;
+  box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
