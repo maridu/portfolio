@@ -2,13 +2,11 @@
   padding-top: 1px; 
   background-color: #b79b75;
   background: url(../images/design/bg_feedback.png);
-//  background-color: #BB81A2;
 }
 
 .feedback__title {
   @extend .skills__title;
   color: #fff;
-//  text-shadow: 1px 1px 1px #000;
 }
 
 .feedback__form {
