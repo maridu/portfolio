@@ -4,6 +4,7 @@ $main-font-size: 16px;
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
 }
 
 body {
@@ -13,7 +14,7 @@ body {
     size: $main-font-size;
     weight: 400;
   }
-  line-height: 1.4;
+  line-height: 2;
   color: #000;
 }
 
@@ -39,6 +40,7 @@ img {
 }
 
 .main-wrapper {
+  min-width: 320px;
   max-width: 1920px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -53,19 +55,34 @@ img {
 }
 
 .section-title {
+  text-align: center;
   font-size: $main-font-size * 2;
+  text-transform: uppercase;
+  
+  @media screen and (max-width: 600px) {
+    font-size: $main-font-size * 1.5;
+  }
+  
+  @media screen and (max-width: 400px) {
+    font-size: $main-font-size * 1.25;
+  }
 }
 
 .btn {
+  font-size: $main-font-size;
   text-align: center;
   color: #fff;
   text-transform: uppercase;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  
+  @media screen and (max-width: 700px) {
+    font-size: $main-font-size * 0.875;
+  }
 }
 
-footer {
-  padding-bottom: 1px; /* временно, чтобы убрать тень внизу*/
-}
+//footer {
+//  padding-bottom: 1px; 
+//}
 
 @import "header";
 @import "features";

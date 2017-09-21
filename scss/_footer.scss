@@ -1,14 +1,16 @@
 .contacts {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   align-items: center;
   padding-top: 25px;
   padding-bottom: 25px;
-//  background-color: #6d5546;
+  background-color: #fff;
 }
 
 .contacts__list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   list-style: none;
   margin: 0 auto;
   padding: 0;
@@ -53,7 +55,6 @@
 .vk {
   background: url(../images/design/vk.svg) no-repeat center center;
   background-size: cover;
-//  background-size: 60px 60px;
 }
 
 .github {

@@ -1,5 +1,6 @@
 .portfolio {
   padding-top: 1px;
+  padding-bottom: 30px;
   background-color: #E8F5C6;
 }
 
@@ -12,14 +13,34 @@
 }
 
 .portfolio__item {
-  display: flex;
-  flex-flow: column wrap;
-  width: calc(100% / 3 - 50px);
-  max-width: 300px;
+  position: relative;
+  width: calc(100% / 5 - 50px);
   padding: 0;
+  padding-bottom: 75px;
   margin: 25px;
   box-sizing: border-box;
   border: 1px solid #4ab55e;
+  
+  @media screen and (max-width: 1800px) {
+    width: calc(100% / 4 - 50px);
+  }
+  
+  @media screen and (max-width: 1400px) {
+    width: calc(100% / 3 - 50px);
+  }
+  
+  @media screen and (max-width: 1000px) {
+    width: calc(100% / 2 - 50px);
+  }
+  
+  @media screen and (max-width: 600px) {
+    width: calc(100% - 50px);
+  }
+  
+  @media screen and (max-width: 400px) {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
 }
 
 .portfolio__site {
@@ -47,13 +68,15 @@
   text-decoration: underline;
   
 
-  transform: translateY(250px);
-//  transform: scale(0);
+  transform: translateY(320px);
   transition: transform 0.6s linear;
+  
+  @media screen and (max-width: 600px) {
+    transform: translateY(500px);
+  }
 }
 
 .portfolio__site:hover > .portfolio__link {
-//  transform: scale(1);
   transform: translateY(0);
   transition: transform 0.6s linear;
 
@@ -67,20 +90,32 @@
 
 .portfolio__description {
   padding: 15px;
+  padding-bottom: 0;
   font-size: $main-font-size * 0.875;
   line-height: 2;
 }
 
+.portfolio__techs {
+  @extend .portfolio__description;
+  padding-top: 0;
+  padding-bottom: 15px;
+}
+
 .portfolio__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   padding: 10px;
-  margin: auto auto 20px auto;
+//  margin: auto auto 20px auto;
   width: 80%;
   box-sizing: border-box;
   
   background-color: #4ab55e;
   border-radius: 20px;
 }
+/* кнопка прибита к нижнему краю с помощью абсолютного позиционирования, т.к. из-за нулевой высоты portfolio-site display: flex некорректно отображает блоки в Firefox*/
 
 .portfolio__btn:hover {
   background-color: #80cb8e;
