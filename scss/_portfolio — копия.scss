@@ -14,11 +14,9 @@
 
 .portfolio__item {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  
   width: calc(100% / 5 - 50px);
   padding: 0;
+  padding-bottom: 75px;
   margin: 25px;
   box-sizing: border-box;
   border: 1px solid $greenElementColor;
@@ -33,7 +31,6 @@
   
   @media screen and (max-width: 1000px) {
     width: calc(100% / 2 - 50px);
-
   }
   
   @media screen and (max-width: 600px) {
@@ -105,15 +102,19 @@
 }
 
 .portfolio__btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: block;
   padding: 10px;
-  margin: auto auto 30px auto;
   width: 80%;
   box-sizing: border-box;
   
   background-color: $greenElementColor;
   border-radius: 20px;
 }
+/* кнопка прибита к нижнему краю с помощью абсолютного позиционирования, т.к. из-за нулевой высоты portfolio-site display: flex некорректно отображает блоки в Firefox*/
 
 .portfolio__btn:hover {
   background-color: #80cb8e;

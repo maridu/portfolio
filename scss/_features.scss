@@ -3,7 +3,7 @@
   padding-top: 25px;
   padding-bottom: 25px;
   box-sizing: border-box;
-  background-color: #E8F5C6;
+  background-color: $greenBgColor;
 }
 
 .features__list {
@@ -30,7 +30,7 @@
   margin: 25px;
   box-sizing: border-box;
   
-  border: 2px solid #4ab55e;
+  border: 2px solid $greenElementColor;
   
   @media screen and (max-width: 1000px) {
     width: calc(100% / 2 - 50px);
@@ -58,13 +58,13 @@
   margin: 0 auto;
   width: 20px;
   height: 20px;
-  background-color: #4ab55e;
+  background-color: $greenElementColor;
   transform: rotate(45deg);
 }
 
 .features__title {
   text-align: center;
-  color: #4ab55e;
+  color: $greenElementColor;
   text-transform: uppercase;
   font-size: $main-font-size * 1.2;
   

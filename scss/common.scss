@@ -1,10 +1,13 @@
 $main-font: "Open Sans", Helvetica, Arial, sans-serif;
 $main-font-size: 16px;
+$greenBgColor: #E8F5C6;
+$greenElementColor: #4ab55e;
 
 html {
   margin: 0;
   padding: 0;
   height: 100%;
+
 }
 
 body {
@@ -16,6 +19,7 @@ body {
   }
   line-height: 2;
   color: #000;
+  max-width: 100%;
 }
 
 a {
@@ -80,9 +84,9 @@ img {
   }
 }
 
-//footer {
-//  padding-bottom: 1px; 
-//}
+.error {
+  background-color: #ff1a1a;
+}
 
 @import "header";
 @import "features";
@@ -90,3 +94,4 @@ img {
 @import "portfolio";
 @import "feedback";
 @import "footer";
+@import "thanks";

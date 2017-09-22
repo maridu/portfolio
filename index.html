@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Вёрстка сайтов из psd-ьакетов</title>
+    <title>Вёрстка сайтов из psd-макетов</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.min.css">
   </head>
   <body>
     <div class="main-wrapper">
@@ -58,7 +58,7 @@
               <li class="skills__item">Работа с Photoshop (нарезка макетов)</li>
               <li class="skills__item">Использование методологии БЭМ в именовании классов</li>
               <li class="skills__item">Работа с Git через командную строку</li>
-              <li class="skills__item">Использование SASS</li>
+              <li class="skills__item">Использование SASS/SCSS</li>
             </ul>
           </div>
         </section> <!--end skills section-->
@@ -69,46 +69,52 @@
             <h2 class="portfolio__title section-title" id="portfolio">Портфолио</h2>
             <ul class="portfolio__list">
               <li class="portfolio__item">
-                <div class="portfolio__site">
-                  <img src="images/content/portfolio-sedona.jpg" alt="Седона" class="portfolio__preview" width="500" height="1079">
-                  <a href="https://maridu.github.io/226594-sedona/" class="portfolio__link">maridu.github.io/226594-sedona</a>
+                <div class="portfolio__top-wrapper">
+                  <div class="portfolio__site">
+                    <img src="images/content/portfolio-sedona.jpg" alt="Седона" class="portfolio__preview" width="500" height="1079">
+                    <a href="https://maridu.github.io/226594-sedona/" class="portfolio__link">maridu.github.io/226594-sedona</a>
+                  </div>
                 </div>
                 <p class="portfolio__description">Выпускной проект интенсива "Базовый HTML и CSS" HTML Academy (учебный макет).</p>
                 <p class="portfolio__techs">Резиновая вёрстка (768-1200px), JavaScript</p>
                 <a class="btn portfolio__btn" href="https://maridu.github.io/226594-sedona/" target="_blank">Посмотреть сайт</a>
               </li>
               <li class="portfolio__item">
-                <div class="portfolio__site">
-                  <img src="images/content/portfolio-jwood.jpg" alt="Jason Wood" class="portfolio__preview" width="500" height="1125">
-                  <a href="https://maridu.github.io/j-wood/" class="portfolio__link">maridu.github.io/j-wood</a>
+                <div class="portfolio__top-wrapper">
+                  <div class="portfolio__site">
+                    <img src="images/content/portfolio-jwood.jpg" alt="Jason Wood" class="portfolio__preview" width="500" height="1125">
+                    <a href="https://maridu.github.io/j-wood/" class="portfolio__link">maridu.github.io/j-wood</a>
+                  </div>
                 </div>
                 <p class="portfolio__description">Вёрстка сайта-портфолио для фотографа (тренировочный макет).</p>
                 <p class="portfolio__techs">Адаптивная вёрстка, JavaScript</p>
                 <a class="btn portfolio__btn" href="https://maridu.github.io/j-wood/" target="_blank">Посмотреть сайт</a>
               </li>
-              
- 
             </ul>
           </div>
-        </section> <!--    end portfolio section-->
+        </section>     <!--        end portfolio section-->
 
         <section class="feedback">
           <div class="inner-wrapper">
             <h2 class="section-title feedback__title" id="feedback">Напишите мне:</h2>
-            <form class="feedback__form" action="https://formspree.io/maria_dulatova@mail.ru" method="post">
+            <form class="feedback__form" action="https://formspree.io/maria-dulatova@bk.ru" method="post">
               <div class="feedback__input-wrapper">
                 <label for="name" class="feedback__label">Ваше имя:</label>
-                <input class="feedback__input" type="text" name="name" id="name" placeholder="Иван Иванов">
+                <input class="feedback__input field" type="text" name="name" id="name" placeholder="Иван Иванов">
               </div>
               <div class="feedback__input-wrapper">
                 <label for="email" class="feedback__label">Ваш e-mail:</label>
-                <input class="feedback__input" type="text" name="email" id="email" placeholder="ivanov@mail.ru">
+                <input class="feedback__input field" type="text" name="email" id="email" placeholder="ivanov@mail.ru">
               </div>
-              <textarea class="feedback__textarea" name="message" id="message" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
-              <input class="feedback__btn btn btn-submit" type="submit" name="submit" value="Отправить">
+              <textarea class="feedback__textarea field" name="message" id="message" cols="30" rows="10" placeholder="Текст сообщения"></textarea>
+              <input class="feedback__btn btn btn-submit" type="submit" name="submit-btn" value="Отправить">
+              <input type="hidden" name="_subject" value="Новое письмо с вашего сайта">
+              <input type="text" name="_gotcha" style="display:none"> 
+              <input type="hidden" name="_next" value="//maridu.github.io/portfolio/thanks.html" />
             </form>
           </div>
-        </section><!--    end feedback section-->
+        </section> <!--    end feedback section-->
+        
       </main>
 
       <footer class="footer">
@@ -116,7 +122,7 @@
           <h2 class="contacts__title section-title visually-hidden" id="contacts">Контакты:</h2>
           <ul class="contacts__list">
             <li class="contacts__item">
-              <a href="mailto:maria-dulatova@mail.ru" class="contacts__link mail" target="_blank"><span class="visually-hidden">Почта</span></a>
+              <a href="mailto:&#109;&#097;&#114;&#105;&#097;&#045;&#100;&#117;&#108;&#097;&#116;&#111;&#118;&#097;&#064;&#098;&#107;&#046;&#114;&#117;" class="contacts__link mail" target="_blank"><span class="visually-hidden">Почта</span></a>
                </li>
             <li class="contacts__item">
               <a href="https://vk.com/id185644921" class="contacts__link vk" target="_blank"><span class="visually-hidden">ВКонтакте</span></a>
@@ -127,9 +133,11 @@
           </ul>
           <p class="mail"></p>
           <p class="vk"></p>
-        </section> <!--      end contacts section-->
+        </section>      <!--        end contacts section--> 
+
       </footer>
     </div>
-
+    
+    <script src="js/main.min.js"></script>
   </body>
 </html>

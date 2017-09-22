@@ -1,0 +1,38 @@
+.inner {
+  background-color: $greenBgColor;
+}
+
+.thanks {
+  max-width: 1824px;
+//  min-width: 304px;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.thanks__title {
+  font-size: $main-font-size * 1.5;
+  color: $greenElementColor;
+}
+
+.thanks__details {
+  margin-bottom: 30px;
+}
+
+.btn-back {
+  padding: 10px 30px;
+  background-color: $greenElementColor;
+  border-radius: 20px;
+}
+
+.btn-back:hover {
+  @extend .portfolio__btn:hover;
+}
+
+.btn-back:focus {
+  @extend .portfolio__btn:focus;
+}
+
+.btn-back:active {
+  @extend .portfolio__btn:active;
+}
