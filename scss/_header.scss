@@ -42,6 +42,10 @@
 .logo {
   max-width: 40%;
   min-height: 1px;
+  
+  &__img {
+    vertical-align: bottom;
+  }
 }
 
 .menu {
@@ -69,6 +73,10 @@
     transition: transform 1.5s;
     transition: transform 1.5s, -webkit-transform 1.5s;
   }
+}
+
+.main-nav {
+  min-height: 25px;
 }
 
 .main-nav__toggle:checked ~ .menu {
@@ -221,8 +229,8 @@
 }
 
 .main-nav__label {
-  position: fixed;
-  top: 25px;
+  position: absolute;
+  top: 15px;
   right: 40px;
   display: none;
   width: 45px;
@@ -230,7 +238,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   
-  border-top: 2px solid #4ab55e;
+  border-top: 2px solid #fff;
   -webkit-transition: border-top 0.4s;
   -o-transition: border-top 0.4s;
   transition: border-top 0.4s;
@@ -256,7 +264,7 @@
   content: '';
   display: block;
   margin-top: 10px;
-  border-top: 2px solid #4ab55e;
+  border-top: 2px solid #fff;
   -webkit-transition: -webkit-transform 0.4s;
   transition: -webkit-transform 0.4s;
   -o-transition: transform 0.4s;
